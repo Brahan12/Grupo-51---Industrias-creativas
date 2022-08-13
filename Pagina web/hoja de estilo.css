@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+/* Css del body */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Css del header */
+
+.posicionLogoTitulo{
+    display: flex;
+    justify-content: center;
+}
+
+.tituloPrincipal{
+    font-family: 'Smooch', cursive;
+    font-size: 3.5em;
+    text-align: center;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-top: 0.2em;
+}
+
+.posicionLogo{
+    margin-right: 10em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.posicionNav{
+    text-align: center;
+    margin-top: 2em;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+.checkbtn{
+    font-size: 1.88em;
+    float: right;
+    line-height: 3.8em;
+    margin-right: 0.5em;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.navEstilos{
+    text-decoration: none;
+    font-size: 1.7em;
+    color: black;
+    font-family: 'Smooch', cursive;
+    padding: 0px 32px;
+    font-weight: bold;
+}
+
+/* Css del Main */
+
+.sizeDivPrincipal{
+	display: flex;
+    justify-content: space-around;
+    margin: 3em 1em 2em;
+}
+
+.sizeImg{
+    width: 100%;
+    height: 100%;
+}
+
+.sizeSubTitulo{
+    width: 35%;
+    background: antiquewhite;
+    margin-left: 1em;
+}
+
+.subTitulo{
+    font-family: 'Smooch', cursive;
+    text-align: center;
+    font-size: 30px;
+}
+
+.parrafoHistoria{
+    padding: 0em 2em;
+    text-align: justify;
+}
+
+.sizeVideo{
+    margin-left: .8em;
+    margin-top: 0.5em;
+    padding: 0em 1em;
+}
+
+/* Css Imaganes */
+
+.sizeImagenesPrincipal{
+    margin-top: 4em;
+}
+
+.superSize{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 11em;
+}
+
+.villanosSize{
+    display: flex;
+    margin-left: 11.1em;
+    margin-top: -0.7em;
+}
+
+.historiaComicsSize{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 11em;
+    margin-top: -0.7em;
+}
+
+.sizeParrafoSuper{
+    width: 27%;
+    height: 8%;
+    margin-top: 2em;
+    margin-right: 6em;
+    background: black;
+    color: blanchedalmond;
+    border-radius: 36px;
+    text-decoration: none;
+}
+
+.sizeParrafoSuper:hover{
+    border: 1px solid aquamarine;
+    box-shadow: 0px 0px 44px red;
+    background-color: antiquewhite;
+    color: black;
+}
+    
+.subTituloParrafo{
+    font-family: 'Smooch', cursive;
+    text-align: center;
+    font-size: 3em;
+    margin-block-end: 0.5em;
+}
+    
+.parrafoSuper{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 2em;
+    margin-block-start: 0em;
+    padding-bottom: 0.4em;
+}
+
+.borderImgSuper{
+    border-radius: 10px;
+}
+
+.sizeParrafoVillanos{
+    width: 27%;
+    height: 8%;
+    margin-top: 4em;
+    margin-left: 6em;
+    background: black;
+    color: blanchedalmond;
+    border-radius: 36px;
+    text-decoration: none;
+}
+
+.sizeParrafoVillanos:hover{
+    border: 1px solid aquamarine;
+    box-shadow: 0px 0px 44px black;
+    background-color: antiquewhite;
+    color: black;
+}
+
+.sizeParrafoHistoria{
+    width: 27%;
+    height: 8%;
+    margin-top: 2.6em;
+    margin-right: 6em;
+    background: black;
+    color: blanchedalmond;
+    border-radius: 36px;
+    text-decoration: none;
+}
+
+.sizeParrafoHistoria:hover{
+    border: 1px solid aquamarine;
+    box-shadow: 0px 0px 44px blue;
+    background-color: antiquewhite;
+    color: black;
+}
+
+.subTituloParrafoHistoria{
+    font-family: 'Smooch', cursive;
+    text-align: center;
+    font-size: 2.6em;
+    margin-block-end: 0.5em;
+}
+
+/* Css del footer */
+
+.sizeFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    background-color: black;
+    color: antiquewhite;
+    border-top: 5px solid red;
+    height: 5em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 5em;
+}
+
+
+.botonFooter{
+    width: 2em;
+    height: 2em;
+    background: antiquewhite;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.sizeIcon{
+    font-size: 1.5em;
+    color: black;
+    line-height: 1.2;
+}
+
+@media (max-width: 1024px){
+    .imgFondo{
+        width: 124%;
+    }
+
+    .sizeDivPrincipal{
+	    width: 120.5%;
+    }
+
+    .sizeSubTitulo {
+        width: 40%;
+    }
+
+    .sizeVideo {
+        padding: 0.8em 1em;
+    }
+
+    .sizeImagenesPrincipal {
+        width: 124%;
+    }
+
+    .borderImgSuper{
+        width: 350px;
+        height: 316px;
+    }
+
+    .superSize {
+        margin-right: 16em;
+    }
+
+    .sizeParrafoSuper {
+        width: 37%;
+        margin: 3em 6em 4em;
+    }
+
+    .villanosSize {
+        margin-left: 14.1em;
+    }
+
+    
+    .sizeParrafoVillanos {
+        width: 37%;
+        margin: 1.5em 3em 5em;
+    }
+
+    .historiaComicsSize {
+        margin-right: 16em;
+    }
+
+    .sizeParrafoHistoria {
+        width: 37%;
+        margin: 2.6em 4em;
+    }
+        
+    .sizeFooter{
+        width:124%;
+    }
+}
+
+
+@media (max-width: 500px){
+    .posicionLogoTitulo{
+        width: 144%;
+    }
+
+    .posicionLogo{
+        margin-right: 3em;
+        margin-top: 2em;
+    }
+
+    .tituloPrincipal{
+        margin-top: 0.6em;
+    }
+
+    ul{
+        position: fixed;
+        width: 70%;
+        height: 70vh;
+        left: -100%;
+        background: rgb(71,71,71);
+        top: 138px;
+        padding-inline-start: 0px;
+        text-align: center;
+        transition: all 0.8s;
+    }
+
+    .checkbtn{
+        display: block;
+        margin: -2em -7em;
+    }
+
+    nav ul li{
+       display: block; 
+       margin: 3em 0;
+       line-height: 1.88em;
+    }
+
+    .navEstilos{
+        font-size: 2.5em;
+        color: beige;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
+

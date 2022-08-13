@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container colorContainer">
+        <h1 class="mt-3">Carousel</h1>
+        <hr>
+        <div class="row row-cols-1">
+            <div class="carousel slide" id="carrusel-01" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrusel-01" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carrusel-01" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carrusel-01" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="1000">
+                        <img src="assents/comics01.jpg" alt="Comics DC" class="d-block w-100" style="border-radius: 5px;">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="assents/comics02.jpg" alt="Comics " class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="assents/comics03.jpg" alt="Comics Marvel" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-01" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrusel-01" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+            
+            <!-- <div class="carousel slide carousel-fade mt-5" id="carrusel-02" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrusel-02" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carrusel-02" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carrusel-02" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="assents/comics01.jpg" alt="Comics DC" class="d-block w-100" style="border-radius: 5px;">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="assents/comics02.jpg" alt="Comics " class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="assents/comics03.jpg" alt="Comics Marvel" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-02" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrusel-02" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div> -->
+            <div class="accordion mt-5" id="acordion-01">
+                <div class="accordion-item">
+                    <div class="accordion-header" id="headerOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#One" aria-expanded="true" aria-controls="collapseOne">
+                            Marvel
+                        </button>
+                    </div>
+                    <div id="One" class="accordion-collapse collapse show" aria-labelledby="headerOne" data-bs-parent="#acordion-01">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequatur est labore repellendus asperiores quod neque itaque fugiat impedit voluptatem praesentium, enim, ea sed qui animi earum cumque, sequi omnis.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-header" id="headerTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Two" aria-expanded="true" aria-controls="collapseOne">
+                            DC
+                        </button>
+                    </div>
+                    <div id="Two" class="accordion-collapse collapse show" aria-labelledby="headerTwo" data-bs-parent="#acordion-01">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequatur est labore repellendus asperiores quod neque itaque fugiat impedit voluptatem praesentium, enim, ea sed qui animi earum cumque, sequi omnis.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-header" id="headerThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Three" aria-expanded="true" aria-controls="collapseOne">
+                            Comics
+                        </button>
+                    </div>
+                    <div id="Three" class="accordion-collapse collapse show" aria-labelledby="headerThree" data-bs-parent="#acordion-01">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequatur est labore repellendus asperiores quod neque itaque fugiat impedit voluptatem praesentium, enim, ea sed qui animi earum cumque, sequi omnis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <h1>Bordes Bootstrap</h1>
+            <div class="caja border border-primary border-1">Caja1</div>
+            <div class="caja border-start border-danger border-2">Caja2</div>
+            <div class="caja border-top border-warning border-3">Caja3</div>
+            <div class="caja border-end border-info border-4">Caja4</div>
+            <div class="caja border-bottom border-success border-5">Caja5</div>
+            <div class="caja border border-0">Caja6</div>
+        </div>
+        <div class="row">
+            <h1>Bordes redondeados Bootstrap</h1>
+            <div class="caja rounded-5">Caja1</div>
+            <div class="caja rounded-circle text-center">Caja2</div>
+            <div class="caja-pildora rounded-pill text-center">Caja3</div>
+            <div class="caja rounded-start">Caja4</div>
+            <div class="caja rounded-top">Caja5</div>
+            <div class="caja rounded-end overflow-auto">
+                <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut earum delectus veritatis vel tempore, fugiat ipsum aliquam amet laudantium.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia dolorum eligendi officiis omnis velit hic placeat! Pariatur harum, architecto, tempora consequuntur eligendi voluptatibus, maxime voluptatum quasi ducimus molestiae nihil ipsa.
+                </P>
+            </div>
+            
+        </div> -->
+        <!-- <section class="row">
+            <h1 class="col-12">Colores de Bootstrap</h1>
+        </section>
+        <article class="row row-cols-1">
+            <div class="col-12 mt-5 bg-primary ">Primary</div>
+            <div class="col-12 mt-3 bg-secondary">Secondary</div>
+            <div class="col-12 mt-3 bg-success">Success</div>
+            <div class="col-12 mt-3 bg-danger text-info">Danger</div>
+            <div class="col-12 mt-3 bg-warning">warning</div>
+            <div class="col-12 mt-3 bg-info ">info</div>
+            <div class="col-12 mt-3 bg-light text-dark">light</div>
+            <div class="col-12 mt-3 bg-dark">Dark</div>
+        </article>
+        <article class="row row-cols-1">
+            <h2 class="mt-5">Color gradient</h2>
+            <div class="col-12 mt-5 bg-primary  bg-gradient">Primary</div>
+            <div class="col-12 mt-3 bg-secondary bg-gradient">Secondary</div>
+            <div class="col-12 mt-3 bg-success bg-gradient">Success</div>
+            <div class="col-12 mt-3 bg-danger text-info bg-gradient">Danger</div>
+            <div class="col-12 mt-3 bg-warning bg-gradient">warning</div>
+            <div class="col-12 mt-3 bg-info  bg-gradient">info</div>
+            <div class="col-12 mt-3 bg-light text-dark bg-gradient">light</div>
+            <div class="col-12 mt-3 bg-dark bg-gradient">Dark</div>
+        </article>
+        <article class="row row-cols-1">
+            <h2 class="mt-5">Color opacity</h2>
+            <div class="col-12 mt-5 bg-success bg-opacity">opacity 100%</div>
+            <div class="col-12 bg-success bg-opacity-75">opacity 75%</div>
+            <div class="col-12 bg-success bg-opacity-50">opacity 50%</div>
+            <div class="col-12 bg-success  bg-opacity-25">opacity 25%</div>
+            <div class="col-12 bg-success bg-opacity-10">opacity 10%</div>
+        </article>
+        <article class="row row-cols-1">
+            <h2 class="mt-5">ancla</h2>
+            <a href="" class="link-danger bg-warning bg-gradient">Ancla</a>
+        </article>
+        <article class="row row-cols-1">
+            <h2 class="mt-5">video embed</h2>
+            <div class="col-12 embed-responsive embed-responsive-16by9">
+                <iframe  class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/v5mWaMCcszs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </article>
+        <br>
+        <br> -->
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <!-- <div class="container">
+        <div class="row">
+            <h1>Embebed</h1>
+        </div>
+        <div class="embed-responsive embed-responsive-1by1">
+            <iframe  class="embed-responsive-item" width="760" height="315" src="https://www.youtube.com/embed/v5mWaMCcszs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div> 
+
+    bg-gradient
+
+    bg-opacity-valor 10, 25,50,75 %
+
+    a link-danger
+
+    border-0
+
+    border-lado  top,start,bottom,end
+
+    border-tamaño 1 = 0.5rem 2 = 1rem 3=1.5rem 
+
+    border-color 
+
+    rounded circle,pill,lado  start,end,top,bottom
+
+    rounded-0
+
+    1 = .5rem
+    2 = 1rem
+
+    m - margin mx-auto
+    p - padding
+
+    t b l r x y
+
+    mx-auto
+
+    overflow-auto
+     
+    overflow-hidden
+
+    shadow-sm,lg,none, shadow-->
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

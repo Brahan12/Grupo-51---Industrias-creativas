@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+
+/* Css del body */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Css del header */
+
+.posicionLogoTitulo{
+    display: flex;
+    justify-content: center;
+}
+
+.tituloPrincipal{
+    font-family: 'Smooch', cursive;
+    font-size: 3.5em;
+    text-align: center;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-top: 0.2em;
+}
+
+.posicionLogo{
+    margin-right: 10em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.posicionNav{
+    text-align: center;
+    margin-top: 2em;
+}
+
+.navEstilos{
+    text-decoration: none;
+    font-size: 1.7em;
+    color: black;
+    font-family: 'Smooch', cursive;
+    padding: 0px 32px;
+    font-weight: bold;
+}
+
+/* Css del Main */
+
+/* Carrousel */
+
+#containerPrincipalCarrousel{
+    border: 5px solid;
+    height: 20em;
+    overflow: hidden;
+    margin-top: 4em;
+}
+
+.containerCarrousel{
+    height: 100%;
+    position: relative;
+}
+
+.cardCarrousel{
+
+    height: 100%;
+}
+
+#cardCarrousel1{   
+    background-image: url("/slider/super1.jpg");
+    background-size: cover;
+    animation: animate 10s infinite;
+}
+
+@keyframes animate{
+    20%{
+        background-image: url("/slider/super1.jpg");
+    }
+
+    40%{
+        background-image: url("/slider/super2.jpg");
+    }
+
+    60%{
+        background-image: url("/slider/super3.jpg");
+    }
+}
+
+/* Css table Main */
+
+table{
+    border-collapse: collapse;
+    margin: 0em 4em;
+    border: 5px solid slateblue;
+    background-color: bisque;
+}
+
+caption{
+    font-family: 'Smooch', cursive;
+    font-size: 3em;
+    margin-top: 2em;
+}
+
+p{
+    text-align: justify;
+}
+
+th{
+    font-family: 'Smooch', cursive;
+    font-size: 1.8em;
+}
+
+td{
+    font-family: 'Edu SA Beginner', cursive;
+    border: 3px solid steelblue;
+    font-size: 1.3em;
+    padding: 0.7em;
+}
+
+iframe{
+    padding: 0em 0.8em;
+}
+
+
+/* Css del footer */
+
+.sizeFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    background-color: black;
+    color: antiquewhite;
+    border-top: 5px solid red;
+    height: 5em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 5em;
+}
+
+
+.botonFooter{
+    width: 2em;
+    height: 2em;
+    background: antiquewhite;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.sizeIcon{
+    font-size: 1.5em;
+    color: black;
+    line-height: 1.2;
+}

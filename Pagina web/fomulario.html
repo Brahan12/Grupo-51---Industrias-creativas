@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/formularioestilos.css">
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <script src="https://kit.fontawesome.com/b74d6ed8cb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="imgFondo">
+        <div class="posicionLogoTitulo" id="principal">
+            <a href=""><img class="posicionLogo" src="/imagenes/logo.jpg" alt="Logo de comics" width="72px" height="72px"></a>
+            <h1 class="tituloPrincipal">Comics " Marvel y DC "</h1>
+        </div>
+        <div>
+            <nav class="posicionNav">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a class="navEstilos" href="/Mi primera pagina web.html">Inicio</a></li>
+                    <li><a class="navEstilos active" href="/SuperHeroes.html">Super heroes</a></li>
+                    <li><a class="navEstilos" href="">Villanos</a></li>
+                    <li><a class="navEstilos" href="">Historia de los comics</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="sizeFormularioPricipal">
+            <form action="">
+                <label for="name">Nombres:
+                    <input type="text" id="name" placeholder="Nombres">
+                </label>
+                <label for="last">Apellidos:
+                    <input type="text" id="last" placeholder="Apellidos">
+                </label>
+                <label for="phone">Telefono ó Celular:
+                    <input type="number" id="phone" placeholder="Telefono ó celular">
+                </label>
+                <label for="sex">Sexo:
+                    <input class="sizeradio" type="radio" id="sex" name="sexRadio">Masculino
+                    <input class="sizeradio" type="radio" id="sex" name="sexRadio">Femenino
+                </label>
+                <label for="observ">Observaciones:
+                    <input type="text" id="observ" placeholder="Observaciones">
+                </label>
+                <label for="politic">Politica de tratamiento de datos:
+                    <input class="sizeradio" type="radio" id="politic" name="politicRadio">Sí
+                    <input class="sizeradio" type="radio" id="politic" name="politicRadio">No
+                </label>
+                <div class="sizeBoton">
+                    <button type="submit" class="botonEnviar">Enviar</button>
+                    <button type="reset">Eliminar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="sizeFooter">
+            <p>Copyright&copy; 2022 Misión TIC</p>
+            <a href="#principal" class="botonFooter"><i class="fa fa-caret-up sizeIcon"></i></a>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(36, 35, 35);
+    color: white;
+}
+
+.caja{
+    width: 180px;
+    height: 180px;
+    background-color: black;
+    margin: 1em;
+}
+
+.caja-pildora{
+    width: 380px;
+    height: 180px;
+    background-color: black;
+    margin: 1em;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+/* [class^="col"]:nth-child(even){
+    background-color: brown;
+}
+
+[class^="col"]:nth-child(odd){
+    background-color: blueviolet;
+} */
